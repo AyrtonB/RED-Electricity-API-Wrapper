@@ -1,4 +1,9 @@
-# Using the REData API Wrapper
+# The REData API Wrapper
+
+<br>
+
+This module creates a Python wrapper for the new Red Eléctrica de España electricity data API. Currently the API only has a few streams up and running, for this reason the wrapper has been designed to be highly generalisable as new streams are added.
+
 <br>
 
 ### Imports
