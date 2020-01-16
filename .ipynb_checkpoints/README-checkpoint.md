@@ -189,52 +189,27 @@ df.head()
 </table>
     
 <br>
-    
-    
+     
 Sometimes you may want to access the raw response so that functionality has been made available as well
-
 
 ```python
 r = RED_stream.make_request(start_date, end_date, time_trunc)
 ```
 
-</div>
+<br>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><br></p>
-<p>Additionaly, rather than re-initialising the class each time you want to query a new set of data you could instead simply update the stream info</p>
+Additionaly, rather than re-initialising the class each time you want to query a new set of data you could instead simply update the stream info</p>
 
 ```python
-    category = 'demanda'
-    widget = 'evolucion'
+category = 'demanda'
+widget = 'evolucion'
 
-    RED_stream.update_stream(category, widget)
-    df = RED_stream.query_REData(start_date, end_date, time_trunc)
+RED_stream.update_stream(category, widget)
+df = RED_stream.query_REData(start_date, end_date, time_trunc)
 
-    df.head()
+df.head()
 ```
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -269,4 +244,3 @@ r = RED_stream.make_request(start_date, end_date, time_trunc)
     </tr>
   </tbody>
 </table>
-</div>
